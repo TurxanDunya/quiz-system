@@ -4,9 +4,9 @@ import com.example.personsys.domain.Teacher;
 import com.example.personsys.dto.TeacherDto;
 import com.example.personsys.mapper.TeacherMapper;
 import com.example.personsys.repository.TeacherRepositoryImpl;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -32,7 +32,7 @@ class TeacherServiceTest {
     @InjectMocks
     private TeacherServiceImpl teacherService;
 
-    @Before
+    @BeforeAll
     public void before() {
         MockitoAnnotations.initMocks(this);
     }
@@ -61,7 +61,7 @@ class TeacherServiceTest {
                         new Teacher(2L, "Test-Name-2", "Test-Surname-2", "Test-Subject-2"))
                 .collect(Collectors.toList()));
 
-        Assert.assertEquals(2, teacherService.getAll().size());
+        Assertions.assertEquals(2, teacherService.getAll().size());
 
     }
 

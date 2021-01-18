@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @Builder
 @AllArgsConstructor
@@ -18,5 +20,7 @@ public class Questions {
     private String subject;
 
     private int type;
+
+    private int level;
 
 }

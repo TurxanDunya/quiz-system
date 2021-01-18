@@ -45,4 +45,5 @@ public class TeacherController {
     public StudentDto assignStudent(@PathVariable("id") long id) {
         return teacherService.assignStudent(id);
     }
+
 }

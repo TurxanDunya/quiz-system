@@ -8,22 +8,31 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Repository
 @RequiredArgsConstructor
-public class QuestionServiceImpl implements QuestionService{
+public class QuestionServiceImpl implements QuestionService {
 
     private final QuestionRepository questionRepository;
     private final QuestionsMapper questionsMapper;
 
     @Override
-    public List<QuestionsDto> getByType(int type) {
-        return questionsMapper.toQuestionDtos(questionRepository.findByType(type));
-    }
+    public List<QuestionsDto> getQuestionsWithAnswers(long count, int type, int level) {
 
-    @Override
-    public List<QuestionsDto> getAll(long count) {
-        return questionsMapper.toQuestionDtos(questionRepository.findAll(count));
+        List<Questions> byType = questionRepository.findByType(type);
+
+        List<Questions> questionsByLevel = byType.stream()
+                .filter(questions -> questions.getLevel() == level)
+                .limit(count)
+                .collect(Collectors.toList());
+
+        List<QuestionsDto> questionsDto = questionsMapper.toQuestionDtos(questionsByLevel);
+        for (QuestionsDto addToDto : questionsDto) {
+            addToDto.setAnswers(questionRepository.getAnswerByQuestionId(addToDto.getId()));
+        }
+
+        return questionsDto;
     }
 
     @Override

@@ -1,5 +1,6 @@
 package com.example.quizsys.repository;
 
+import com.example.quizsys.domain.Answers;
 import com.example.quizsys.domain.Questions;
 import lombok.RequiredArgsConstructor;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
@@ -17,6 +18,16 @@ public class QuestionRepositoryImpl implements QuestionRepository {
     private final NamedParameterJdbcTemplate jdbcTemplate;
 
     @Override
+    public List<Answers> getAnswerByQuestionId(long id) {
+        String SQL_FOR_ANSWER = "select * from answers where question_id=:id";
+
+        Map<String, Object> params = new HashMap<>();
+        params.put("id", id);
+
+        return jdbcTemplate.query(SQL_FOR_ANSWER, params, new BeanPropertyRowMapper<>(Answers.class));
+    }
+
+    @Override
     public List<Questions> findByType(int type) {
         String SQL_FOR_ID = "select * from questions where type = :type";
 
@@ -24,16 +35,6 @@ public class QuestionRepositoryImpl implements QuestionRepository {
         params.put("type", type);
 
         return jdbcTemplate.query(SQL_FOR_ID, params, new BeanPropertyRowMapper<>(Questions.class));
-    }
-
-    @Override
-    public List<Questions> findAll(long count) {
-        String SQL_FIND_ALL = "select * from questions limit :count";
-
-        Map<String, Object> params = new HashMap<>();
-        params.put("count", count);
-
-        return jdbcTemplate.query(SQL_FIND_ALL, params, new BeanPropertyRowMapper<>(Questions.class));
     }
 
     @Override

@@ -1,14 +1,15 @@
 package com.example.quizsys.repository;
 
+import com.example.quizsys.domain.Answers;
 import com.example.quizsys.domain.Questions;
 
 import java.util.List;
 
 public interface QuestionRepository {
 
-    List<Questions> findByType(int type);
+    List<Answers> getAnswerByQuestionId(long id);
 
-    List<Questions> findAll(long count);
+    List<Questions> findByType(int type);
 
     void add(Questions questions);
 

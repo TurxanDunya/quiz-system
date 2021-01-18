@@ -14,11 +14,10 @@ import java.util.List;
         configuration = FeignClientQuestion.FeignConfigurationQuestion.class, primary = false)
 public interface FeignClientQuestion {
 
-    @GetMapping("/{count}")
-    List<QuestionClientResponse> getAll(@PathVariable("count") long count);
-
-    @GetMapping("/find/{id}")
-    QuestionClientResponse getById(@PathVariable("id") Long id);
+    @GetMapping("/{count}/{type}/{level}")
+    List<QuestionClientResponse> getAll(@PathVariable("count") long count,
+                                        @PathVariable("type") int type,
+                                        @PathVariable("level") int level);
 
     @PostMapping
     void add(@RequestBody QuestionClientRequest questionClient);

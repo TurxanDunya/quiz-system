@@ -6,9 +6,7 @@ import java.util.List;
 
 public interface QuestionService {
 
-    List<QuestionsDto> getByType(int type);
-
-    List<QuestionsDto> getAll(long count);
+    List<QuestionsDto> getQuestionsWithAnswers(long count, int type, int level);
 
     void add(QuestionsDto questionsDto);
 

@@ -14,14 +14,11 @@ public class QuestionsController {
 
     private final QuestionService questionService;
 
-    @GetMapping("/{count}")
-    public List<QuestionsDto> getAll(@PathVariable("count") long count){
-        return questionService.getAll(count);
-    }
-
-    @GetMapping("/find/{type}")
-    public List<QuestionsDto> findById(@PathVariable("type") int type){
-        return questionService.getByType(type);
+    @GetMapping("/{count}/{type}/{level}")
+    public List<QuestionsDto> getAll(@PathVariable("count") long count,
+                                     @PathVariable("type") int type,
+                                     @PathVariable("level") int level){
+        return questionService.getQuestionsWithAnswers(count, type, level);
     }
 
     @PostMapping

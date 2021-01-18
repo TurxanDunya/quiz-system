@@ -1,2 +1,5 @@
-package com.example.usersys.service;public interface ExamQuestionsService {
+package com.example.usersys.service;
+
+public interface ExamQuestionsService {
+
 }
