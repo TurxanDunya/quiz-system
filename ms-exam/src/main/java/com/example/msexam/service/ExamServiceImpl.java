@@ -1,7 +1,6 @@
 package com.example.msexam.service;
 
 import com.example.msexam.domain.Exam;
-import com.example.msexam.domain.RealExam;
 import com.example.msexam.dto.ExamDto;
 import com.example.msexam.dto.ExamersDto;
 import com.example.msexam.mapper.ExamMapper;
@@ -26,6 +25,7 @@ public class ExamServiceImpl implements ExamService{
         return examMapper.toExamersDtos(examRepository.getAllExamDates(count));
     }
 
+    @Override
     public ExamDto assignRandomExam() {
 
         Random r = new Random();
@@ -40,6 +40,7 @@ public class ExamServiceImpl implements ExamService{
         return examDto;
     }
 
+    @Override
     public ExamDto assignManualExam(Exam exam) {
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss");
@@ -55,32 +56,6 @@ public class ExamServiceImpl implements ExamService{
 
         examRepository.assignExam(examMapper.toDomain(examDto));
         return examDto;
-    }
-
-    @Override
-    public void setManualExamForStudent(RealExam exam) {
-
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss");
-        LocalDateTime time = LocalDateTime.parse(exam.getExamDate().toString(), formatter);
-
-        Exam examClient = new Exam();
-        examClient.setExamDate(time);
-        examClient.setLocation(exam.getLocation());
-
-        ExamDto examManual = assignManualExam(examClient);
-//        StudentClientResponse studentById = clientStudent.getById(exam.getId());
-
-//        examRepository.setExamForStudent(examManual, studentById);
-    }
-
-    @Override
-    public void setRandomExamForStudent(long id) {
-
-        ExamDto examRandom = assignRandomExam();
-//        StudentClientResponse studentById = clientStudent.getById(id);
-
-//        examRepository.setExamForStudent(examRandom, studentById);
-
     }
 
 }

@@ -1,6 +1,7 @@
 package com.example.msexam.controller;
 
-import com.example.msexam.domain.RealExam;
+import com.example.msexam.domain.Exam;
+import com.example.msexam.dto.ExamDto;
 import com.example.msexam.dto.ExamersDto;
 import com.example.msexam.service.ExamService;
 import lombok.RequiredArgsConstructor;
@@ -21,13 +22,13 @@ public class ExamController {
     }
 
     @PostMapping("/manual")
-    public void setManualExamForStudent(@RequestBody RealExam realExam) {
-        examService.setManualExamForStudent(realExam);
+    public ExamDto setRandomExam() {
+        return examService.assignRandomExam();
     }
 
     @GetMapping("/random/student/{id}")
-    public void setExamDateRandom(@PathVariable("id") long id) {
-        examService.setRandomExamForStudent(id);
+    public ExamDto setManualExam(@RequestBody Exam exam) {
+        return examService.assignRandomExam();
     }
 
 }
