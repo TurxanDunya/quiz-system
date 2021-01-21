@@ -28,7 +28,7 @@ public class ExamController {
 
     @GetMapping("/random/student/{id}")
     public ExamDto setManualExam(@RequestBody Exam exam) {
-        return examService.assignRandomExam();
+        return examService.assignManualExam(exam);
     }
 
 }

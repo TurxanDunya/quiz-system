@@ -45,27 +45,4 @@ public class ExamRepositoryImpl implements ExamRepository {
         jdbcTemplate.update(SQL_FOR_DATE, params);
     }
 
-    @Override
-    public void setExamForStudent(ExamDto examDto, Examers examers) {
-
-        String SQL_FOR_ADD = "insert into real_exams(name, surname, exam, exam_date, exam_expiration_date, location) " +
-                " values ( " +
-                " :name, " +
-                " :surname, " +
-                " :exam, " +
-                " :exam_date, " +
-                " :exam_expiration_date, " +
-                " :location) ";
-
-        Map<String, Object> params = new HashMap<>();
-        params.put("name", examers.getName());
-        params.put("surname", examers.getSurname());
-        params.put("exam", examers.getExam());
-        params.put("exam_date", examDto.getExamDate());
-        params.put("exam_expiration_date", examDto.getExamExpirationDate());
-        params.put("location", examDto.getLocation());
-
-        jdbcTemplate.update(SQL_FOR_ADD, params);
-    }
-
 }

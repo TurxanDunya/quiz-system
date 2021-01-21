@@ -13,7 +13,4 @@ public interface ExamRepository {
 
     void assignExam(Exam exam);
 
-    void setExamForStudent(ExamDto examDto,
-                           Examers examers);
-
 }
