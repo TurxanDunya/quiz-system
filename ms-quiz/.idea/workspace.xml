@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="47aae2b1-09ab-45bc-b021-c08f4aa136cf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ms-exam/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-exam/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-exam/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-exam/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-exam/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-exam/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-exam/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-exam/src/main/java/com/example/msexam/MsExamApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-exam/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-exam/src/test/java/com/example/msexam/MsExamApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/src/main/java/com/example/personsys/PersonSysApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/src/main/java/com/example/personsys/ServletInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/src/main/java/com/example/personsys/config/ConfigurationMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/src/main/java/com/example/personsys/config/SwaggerConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/src/main/java/com/example/personsys/controller/StudentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/src/main/java/com/example/personsys/controller/TeacherController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/src/main/java/com/example/personsys/domain/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/src/main/java/com/example/personsys/domain/Teacher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/src/main/java/com/example/personsys/dto/StudentDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/src/main/java/com/example/personsys/dto/TeacherDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/src/main/java/com/example/personsys/mapper/StudentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/src/main/java/com/example/personsys/mapper/TeacherMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/src/main/java/com/example/personsys/repository/StudentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/src/main/java/com/example/personsys/repository/StudentRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/src/main/java/com/example/personsys/repository/TeacherRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/src/main/java/com/example/personsys/repository/TeacherRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/src/main/java/com/example/personsys/service/StudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/src/main/java/com/example/personsys/service/StudentServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/src/main/java/com/example/personsys/service/TeacherService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/src/main/java/com/example/personsys/service/TeacherServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/src/main/resources/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/src/test/java/com/example/personsys/controller/TeacherControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-sys/src/test/java/com/example/personsys/service/TeacherServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/QuizSysApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/ServletInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/client/FeignClientStudent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/client/FeignClientTeacher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/client/clientStudent/model/StudentClientRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/client/clientStudent/model/StudentClientResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/client/clientTeacher/model/TeacherClientRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/client/clientTeacher/model/TeacherClientResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/config/ConfigurationMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/config/FeignClientConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/controller/ExamController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/controller/QuestionsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/domain/Answers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/domain/Categories.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/domain/Exam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/domain/Examers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/domain/Questions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/domain/RealExam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/dto/ExamDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/dto/ExamersDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/dto/QuestionsDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/logging/Audience.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/logging/ExceptionLogAdvice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/logging/Performance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/mapper/ExamMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/mapper/ExamersMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/mapper/QuestionsMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/repository/ExamRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/repository/ExamRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/repository/QuestionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/repository/QuestionRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/service/ExamService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/service/ExamServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/service/QuestionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/java/com/example/quizsys/service/QuestionServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/resources/banner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/main/resources/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quiz-sys/src/test/resources/application.properties" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1nNVdBlPjXGWS5rM8WM0XAQ57HF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ms-exam" />
+  </component>
+  <component name="RunManager">
+    <configuration name="MsQuizApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ms-quiz.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.msquiz.MsQuizApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="47aae2b1-09ab-45bc-b021-c08f4aa136cf" name="Default Changelist" comment="" />
+      <created>1611230622529</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611230622529</updated>
+      <workItem from="1611230624842" duration="64000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
