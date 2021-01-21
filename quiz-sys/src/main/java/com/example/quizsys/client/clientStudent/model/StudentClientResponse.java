@@ -1,4 +1,4 @@
-package com.example.personsys.domain;
+package com.example.quizsys.client.clientStudent.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -7,14 +7,16 @@ import lombok.NoArgsConstructor;
 
 @Data
 @Builder
-@NoArgsConstructor
 @AllArgsConstructor
-public class Student {
+@NoArgsConstructor
+public class StudentClientResponse {
 
     private long id;
 
     private String name;
 
     private String surname;
+
+    private String exam;
 
 }

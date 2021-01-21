@@ -34,6 +34,9 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
+	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+	implementation 'io.github.openfeign:feign-jackson:10.5.0'
+	implementation 'io.github.openfeign:feign-annotation-error-decoder:1.3.0'
 }
 
 test {

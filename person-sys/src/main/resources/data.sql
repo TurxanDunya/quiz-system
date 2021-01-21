@@ -20,12 +20,11 @@ CREATE TABLE students
 (
     id      INTEGER AUTO_INCREMENT PRIMARY KEY,
     name    VARCHAR(250) NOT NULL,
-    surname VARCHAR(250) NOT NULL,
-    exam    VARCHAR(250) NOT NULL
+    surname VARCHAR(250) NOT NULL
 );
 
-INSERT INTO students (name, surname, exam)
-VALUES ('Sam', 'Brown', 'Mathematics'),
-       ('Mike', 'James', 'Literature'),
-       ('John', 'Saint', 'Philophosy'),
-       ('Miles', 'Morales', 'Software Engineer');
+INSERT INTO students (name, surname)
+VALUES ('Sam', 'Brown'),
+       ('Mike', 'James'),
+       ('John', 'Saint'),
+       ('Miles', 'Morales');

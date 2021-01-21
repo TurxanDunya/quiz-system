@@ -1,6 +1,7 @@
 package com.example.quizsys.config;
 
 import com.example.quizsys.mapper.ExamMapper;
+import com.example.quizsys.mapper.ExamersMapper;
 import com.example.quizsys.mapper.QuestionsMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,5 +19,9 @@ public class ConfigurationMapper {
         return ExamMapper.INSTANCE;
     }
 
+    @Bean
+    public ExamersMapper examersMapper() {
+        return ExamersMapper.INSTANCE;
+    }
 
 }

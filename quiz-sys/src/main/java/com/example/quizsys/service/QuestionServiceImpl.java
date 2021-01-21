@@ -1,5 +1,6 @@
 package com.example.quizsys.service;
 
+import com.example.quizsys.domain.Categories;
 import com.example.quizsys.domain.Questions;
 import com.example.quizsys.dto.QuestionsDto;
 import com.example.quizsys.mapper.QuestionsMapper;
@@ -25,6 +26,28 @@ public class QuestionServiceImpl implements QuestionService {
         List<Questions> questionsByLevel = byType.stream()
                 .filter(questions -> questions.getLevel() == level)
                 .limit(count)
+                .collect(Collectors.toList());
+
+        List<QuestionsDto> questionsDto = questionsMapper.toQuestionDtos(questionsByLevel);
+        for (QuestionsDto addToDto : questionsDto) {
+            addToDto.setAnswers(questionRepository.getAnswerByQuestionId(addToDto.getId()));
+        }
+
+        return questionsDto;
+    }
+
+    @Override
+    public List<QuestionsDto> getByCategories(Categories categories) {
+
+        List<Questions> byType = questionRepository.findByType(categories.getType());
+
+        List<Questions> questionsByLevel = byType.stream()
+                .filter(questions -> questions.getLevel() == categories.getLow())
+                .limit(categories.getLow())
+                .filter(questions -> questions.getLevel() == categories.getNormal())
+                .limit(categories.getNormal())
+                .filter(questions -> questions.getLevel() == categories.getHard())
+                .limit(categories.getHard())
                 .collect(Collectors.toList());
 
         List<QuestionsDto> questionsDto = questionsMapper.toQuestionDtos(questionsByLevel);

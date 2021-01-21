@@ -38,12 +38,11 @@ public class StudentRepositoryImpl implements StudentRepository {
 
     @Override
     public void add(Student student) {
-        String SQL_FOR_ADD = "insert into students(name, surname, exam) values(:name, :surname, :exam)";
+        String SQL_FOR_ADD = "insert into students(name, surname) values(:name, :surname)";
 
         Map<String, Object> params = new HashMap<>();
         params.put("name", student.getName());
         params.put("surname", student.getSurname());
-        params.put("exam", student.getExam());
 
         jdbcTemplate.execute(SQL_FOR_ADD, params, new PreparedStatementCallback<Object>() {
             @Override
@@ -65,13 +64,12 @@ public class StudentRepositoryImpl implements StudentRepository {
 
     @Override
     public void updateById(StudentDto studentDto) {
-        String SQL_FOR_UPDATE = "update students set id=:id, name=:name, surname=:surname, exam=:exam where id=:id";
+        String SQL_FOR_UPDATE = "update students set id=:id, name=:name, surname=:surname where id=:id";
 
         Map<String, Object> params = new HashMap<>();
         params.put("id", studentDto.getId());
         params.put("name", studentDto.getName());
         params.put("surname", studentDto.getSurname());
-        params.put("exam", studentDto.getExam());
 
         jdbcTemplate.update(SQL_FOR_UPDATE, params);
     }

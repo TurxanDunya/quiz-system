@@ -24,6 +24,4 @@ public class StudentDto {
     @Size(min = 2, max = 30)
     private String surname;
 
-    @NotNull
-    private String exam;
 }
