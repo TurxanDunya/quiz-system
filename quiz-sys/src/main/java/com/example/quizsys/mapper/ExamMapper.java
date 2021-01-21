@@ -2,6 +2,7 @@ package com.example.quizsys.mapper;
 
 import com.example.quizsys.domain.Exam;
 import com.example.quizsys.dto.ExamDto;
+import com.example.quizsys.dto.ExamersDto;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
@@ -14,7 +15,7 @@ public interface ExamMapper {
 
     ExamDto toDto(Exam exam);
 
-    List<ExamDto> toExamDtos(List<Exam> exams);
+    List<ExamersDto> toExamersDtos(List<ExamersDto> exams);
 
     Exam toDomain(ExamDto examDto);
 }

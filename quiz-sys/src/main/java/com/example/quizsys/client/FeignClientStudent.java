@@ -1,7 +1,7 @@
 package com.example.quizsys.client;
 
-import com.example.usersys.client.clientStudent.model.StudentClientRequest;
-import com.example.usersys.client.clientStudent.model.StudentClientResponse;
+import com.example.quizsys.client.clientStudent.model.StudentClientRequest;
+import com.example.quizsys.client.clientStudent.model.StudentClientResponse;
 import feign.Logger;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.context.annotation.Bean;

@@ -1,16 +1,16 @@
 package com.example.quizsys.service;
 
-import com.example.quizsys.domain.ExamFilter;
-import com.example.quizsys.dto.ExamDto;
+import com.example.quizsys.domain.RealExam;
+import com.example.quizsys.dto.ExamersDto;
 
 import java.util.List;
 
 public interface ExamService {
 
-    List<ExamDto> getAllExamDates(long count);
+    List<ExamersDto> getAllExamDates(long count);
 
-    ExamDto assignRandomExam();
+    void setManualExamForStudent(RealExam exam);
 
-    ExamDto assignManualExam(ExamFilter examFilter);
+    void setRandomExamForStudent(long id);
 
 }

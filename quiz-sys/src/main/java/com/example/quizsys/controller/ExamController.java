@@ -1,7 +1,8 @@
 package com.example.quizsys.controller;
 
-import com.example.quizsys.domain.ExamFilter;
+import com.example.quizsys.domain.RealExam;
 import com.example.quizsys.dto.ExamDto;
+import com.example.quizsys.dto.ExamersDto;
 import com.example.quizsys.service.ExamService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
@@ -9,26 +10,27 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/new-exam")
+@RequestMapping("/exams")
 @RequiredArgsConstructor
 public class ExamController {
 
     private final ExamService examService;
 
-    @GetMapping
-    public ExamDto newExam() {
-        return examService.assignRandomExam();
-    }
-
     @GetMapping("/{count}")
-    public List<ExamDto> getAll(@PathVariable("count") long count){
+    public List<ExamersDto> getAll(@PathVariable("count") long count){
         return examService.getAllExamDates(count);
     }
 
-    @PostMapping
-    public ExamDto assignExam(@RequestBody ExamFilter examFilter) {
-        return examService.assignManualExam(examFilter);
+    @PostMapping("/manual")
+    public void setManualExamForStudent(@RequestBody RealExam realExam) {
+        examService.setManualExamForStudent(realExam);
     }
+
+    @GetMapping("/random/student/{id}")
+    public void setExamDateRandom(@PathVariable("id") long id) {
+        examService.setRandomExamForStudent(id);
+    }
+
 }
 
 
