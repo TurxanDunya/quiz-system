@@ -1,7 +1,7 @@
 package com.example.msexam.client;
 
-import com.example.msexam.client.model.ExamClientRequest;
-import com.example.msexam.client.model.ExamClientResponse;
+import com.example.msexam.client.clientExam.model.ExamClientRequest;
+import com.example.msexam.client.clientExam.model.ExamClientResponse;
 import feign.Logger;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.context.annotation.Bean;

@@ -1,4 +1,4 @@
-package com.example.msexam.client.model;
+package com.example.msexam.client.clientExam.model;
 
 import lombok.Data;
 

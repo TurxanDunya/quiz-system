@@ -1,4 +1,4 @@
--- This tables belongs to EXAM
+-- This table belongs to EXAM
 
 CREATE TABLE exam
 (
@@ -10,7 +10,7 @@ CREATE TABLE exam
 INSERT INTO exam (exam_date, exam_expiration_date, location)
 VALUES ('2020-12-27T17:38:30', '2020-12-27T19:08:30', '125 sayli merkez');
 
--- This tables belongs to real_exams
+-- This table belongs to real_exams
 
 DROP TABLE IF EXISTS real_exams;
 
@@ -30,3 +30,13 @@ VALUES ('Alim', 'Marcellus', 'Philophosy', '2020-12-27T17:38:30', '2020-12-27T19
        ('Bill', 'Gates', 'Software Engineer', '2020-12-27T17:38:30', '2020-12-27T19:08:30', '153 sayli merkez'),
        ('Mate', 'Adam', 'Mathematics', '2020-12-27T17:38:30', '2020-12-27T19:08:30', '45 sayli merkez'),
        ('Kate', 'Ola', 'Literature', '2020-12-27T17:38:30', '2020-12-27T19:08:30', '63 sayli merkez');
+
+-- This table belongs to
+
+CREATE TABLE accepted_answer
+(
+    answer VARCHAR(250)
+);
+
+INSERT INTO accepted_answer(answer)
+VALUES ();

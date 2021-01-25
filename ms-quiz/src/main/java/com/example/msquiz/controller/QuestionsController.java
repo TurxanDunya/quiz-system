@@ -16,7 +16,7 @@ public class QuestionsController {
     private final QuestionService questionService;
 
     @GetMapping("/count/{count}/type/{type}/level/{level}")
-    public List<QuestionsDto> getAll(@PathVariable("count") long count,
+    public List<QuestionsDto> getQuestionByParameters(@PathVariable("count") long count,
                                      @PathVariable("type") int type,
                                      @PathVariable("level") int level) {
         return questionService.getQuestionsWithAnswers(count, type, level);

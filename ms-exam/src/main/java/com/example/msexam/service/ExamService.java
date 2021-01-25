@@ -1,17 +1,9 @@
 package com.example.msexam.service;
 
-import com.example.msexam.domain.Exam;
-import com.example.msexam.dto.ExamDto;
-import com.example.msexam.dto.ExamersDto;
-
-import java.util.List;
+import com.example.msexam.client.clientQuestion.model.Categories;
 
 public interface ExamService {
 
-    List<ExamersDto> getAllExamDates(long count);
-
-    ExamDto assignRandomExam();
-
-    ExamDto assignManualExam(Exam exam);
+    void assignQuestionsForGroup(long number, Categories categories);
 
 }

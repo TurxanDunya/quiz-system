@@ -42,12 +42,10 @@ public class QuestionServiceImpl implements QuestionService {
         List<Questions> byType = questionRepository.findByType(categories.getType());
 
         List<Questions> questionsByLevel = byType.stream()
-                .filter(questions -> questions.getLevel() == categories.getLow())
-                .limit(categories.getLow())
-                .filter(questions -> questions.getLevel() == categories.getNormal())
-                .limit(categories.getNormal())
-                .filter(questions -> questions.getLevel() == categories.getHard())
-                .limit(categories.getHard())
+                .filter(questions -> questions.getLevel() == categories.getLow() ||
+                        questions.getLevel() == categories.getNormal() ||
+                        questions.getLevel() == categories.getHard())
+                .limit(categories.getLow() + categories.getNormal() + categories.getHard())
                 .collect(Collectors.toList());
 
         List<QuestionsDto> questionsDto = questionsMapper.toQuestionDtos(questionsByLevel);

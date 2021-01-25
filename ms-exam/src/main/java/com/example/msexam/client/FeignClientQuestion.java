@@ -1,7 +1,8 @@
 package com.example.msexam.client;
 
-import com.example.msexam.client.model.QuestionClientRequest;
-import com.example.msexam.client.model.QuestionClientResponse;
+import com.example.msexam.client.clientQuestion.model.Categories;
+import com.example.msexam.client.clientQuestion.model.QuestionClientRequest;
+import com.example.msexam.client.clientQuestion.model.QuestionClientResponse;
 import feign.Logger;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.context.annotation.Bean;
@@ -14,10 +15,13 @@ import java.util.List;
         configuration = FeignClientQuestion.FeignConfigurationQuestion.class, primary = false)
 public interface FeignClientQuestion {
 
-    @GetMapping("/{count}/{type}/{level}")
-    List<QuestionClientResponse> getAll(@PathVariable("count") long count,
+    @GetMapping("count/{count}/type/{type}/level/{level}")
+    List<QuestionClientResponse> getQuestionsByParameters(@PathVariable("count") long count,
                                         @PathVariable("type") int type,
                                         @PathVariable("level") int level);
+
+    @PostMapping("/categories")
+    QuestionClientResponse getQuestionsByCategories(@RequestBody Categories categories);
 
     @PostMapping
     void add(@RequestBody QuestionClientRequest questionClient);

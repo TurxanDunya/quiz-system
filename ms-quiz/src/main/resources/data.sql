@@ -25,7 +25,7 @@ VALUES ('What is about Philosophy?', 'Philosophy', '1', '1'),
        ('What about Software Engineering book?', 'Software Engineering', '4', '4'),
        ('What about Literature book?', 'Literature', '3', '4');
 
--- This tables belongs to ANSWERS
+-- This table belongs to ANSWERS
 
 CREATE TABLE answers
 (
@@ -55,3 +55,29 @@ VALUES ('1', '1', 'Philosophy', 'cwecewv', 'wvwvw', 'advwvw', 'wcwcew'),
        ('1', '14', 'Philosophy', 'cwecewv', 'wvwvw', 'advwvw', 'wcwcew'),
        ('4', '15', 'Software Engineering', 'cwecewv', 'wvwvw', 'advwvw', 'wcwcew'),
        ('3', '16', 'Literature', 'cwecewv', 'wvwvw', 'advwvw', 'wcwcew');
+
+-- This table belongs to true_answer
+
+CREATE TABLE true_answer
+(
+    true_answer VARCHAR(250) NOT NULL,
+    FOREIGN KEY (true_answer) references answers (question_id)
+);
+
+INSERT INTO true_answer(true_answer)
+VALUES ('Philosophy'),
+       ('Mathematics'),
+       ('Literature'),
+       ('Software Engineering'),
+       ('Philosophy'),
+       ('Mathematics'),
+       ('Literature'),
+       ('Software Engineering'),
+       ('Philosophy'),
+       ('Mathematics'),
+       ('Literature'),
+       ('Software Engineering'),
+       ('Philosophy'),
+       ('Mathematics'),
+       ('Literature'),
+       ('Software Engineering');
